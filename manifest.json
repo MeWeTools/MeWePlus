@@ -1,0 +1,29 @@
+{
+
+	"manifest_version": 2,
+	"name": "MeWe+",
+	"version": "2.0",
+	
+	"description": "Adds more features to MeWe",
+	
+	"icons": {
+		"48": "icons/icon-48.png",
+		"96": "icons/icon-96.png"
+	},
+
+	"web_accessible_resources": [
+		"icons/icon-96.png",
+		"icons/icon-96_dark.png"
+	],
+	
+	"permissions": [
+		"webRequest",
+		"webRequestBlocking",
+		"https://mewe.com/*"
+	],
+
+	"background": {
+		"scripts": ["background.js"]
+	}
+
+}
