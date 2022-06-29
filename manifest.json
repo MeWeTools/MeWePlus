@@ -19,7 +19,16 @@
 	"permissions": [
 		"webRequest",
 		"webRequestBlocking",
-		"https://mewe.com/*"
+		"https://mewe.com/*",
+		"https://cdn.mewe.com/*"
+	],
+
+	"content_scripts": [
+		{
+			"matches": ["https://mewe.com/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_start"
+		}
 	],
 
 	"background": {
