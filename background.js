@@ -18,7 +18,7 @@ function interceptScripts(req) {
 
 		// Unlock admin tools
 		response = response
-			.replace("this.get('globals.currentUser.id') === '5602c780e4b08f388c897a39'", "true")
+			.replace('"5602c780e4b08f388c897a39"===this.get("globals.currentUser.id")', "true")
 			.replace("getPrimaryEmail();", "true");
 
 		filter.write(encoder.encode(response));
